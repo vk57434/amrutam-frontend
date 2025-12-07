@@ -1,62 +1,129 @@
-# Amrutam Frontend
+🌿 Amrutam Consumer Portal – Frontend Assignment
 
-This repository contains the frontend for the Amrutam e-commerce project (React + Vite).
+This project is developed as part of the Front-End Developer Assignment for Amrutam.
+It replicates a real e-commerce flow using React.js with clean UI, responsive design, and a component-driven architecture.
 
-## Quick start
+📌 Project Overview
 
-Prerequisites:
-- Node.js (14+ recommended)
-- npm or yarn
+The goal of this assignment is to implement 10 functional pages from the Amrutam consumer portal using React, based on the provided Figma design system. This front-end simulates a natural shopping experience including product browsing, authentication, cart management, and checkout.
 
-Install and run locally:
+No backend is used; all functionality is implemented using React Router, Context API, and static data.
 
-```powershell
-cd "amrutam-frontend"
+🧩 Pages Implemented (10 Total)
+Page	Description
+Home	Brand-themed landing page with hero & sections
+Products	Grid of all available products
+Product Details	Detailed view using dynamic routes
+Cart	Add/remove items, update quantity
+Checkout	Login required, single address flow
+Login	User authentication (context-based)
+Signup	Create account simulation
+Profile	User details + stored address
+Orders	Display previous orders
+Order Details	Detailed summary of a selected order
+⚙️ Core Features
+🛒 Cart Functionality
+
+Add to cart
+
+Remove item
+
+Update quantity
+
+Total price auto-calculation
+
+🔐 Authentication (Frontend Simulation)
+
+Login required for checkout
+
+User stored in AuthContext
+
+Only one saved address per user
+
+🎨 UI/UX
+
+Clean Ayurvedic-themed design
+
+Reusable button, card, and layout components
+
+Fully responsive using Flexbox + Grid
+
+Images managed through local assets
+
+🧭 Routing
+
+Clean, structured routing using React Router
+
+Dynamic product pages (/products/:id)
+
+🛠️ Tech Stack
+Category	Technology
+Frontend Framework	React.js (Vite)
+Routing	React Router DOM
+State Management	Context API
+Styling	Custom CSS (responsive)
+Data	Local JS files (products, orders)
+Tools	JSX, ES Modules, Vite Dev Server
+📁 Project Structure
+src/
+  assets/images/       → Product images
+  components/          → Navbar, Footer, Layout, ProductCard
+  context/             → AuthContext, CartContext
+  pages/               → All 10 assignment screens
+  data/                → Static products & orders
+  App.jsx              → Main routing
+  main.jsx             → Providers + App mount
+  index.css            → Global styling system
+
+🧠 Development Approach & Thought Process
+
+Divided UI into reusable components for maintainability
+
+Used Context API instead of Redux to keep the project lightweight
+
+Designed a natural consumer flow:
+Home → Products → Product Details → Cart → Login → Checkout → Orders
+
+Created a consistent design system using CSS variables for spacing, colors, and typography
+
+Ensured responsive UI across mobile, tablet, and desktop
+
+Used semantic HTML for accessibility and SEO
+
+🔍 Key Decisions & Why They Were Made
+✔ Context API over Redux
+
+Simpler, more efficient for small to medium projects.
+
+✔ One saved address per user
+
+Matches typical checkout flows and simplifies UI.
+
+✔ React Router for navigation
+
+Clean separation of pages and dynamic routes.
+
+✔ Component-driven design
+
+Ensures readability and scalability for real-world growth.
+
+🚀 How to Run the Project Locally
+1️⃣ Clone the repository
+git clone https://github.com/your-username/amrutam-frontend.git
+cd amrutam-frontend
+
+2️⃣ Install dependencies
 npm install
+
+3️⃣ Start development server
 npm run dev
-```
 
-Build for production:
-
-```powershell
+4️⃣ Build for production
 npm run build
-```
 
-## Project layout
 
-- `src/` — React source files
-- `public/` — static assets
-- `package.json` — project scripts and dependencies
+🙏 Conclusion
 
-## GitHub
-Remote repository: `https://github.com/vk57434/amrutam-frontend.git`
+This assignment demonstrates full capability in building a modern, responsive, and user-focused React application with clean architecture and intuitive workflows.
 
-If this repo was created locally, push with:
-
-```powershell
-git init
-git add .
-git commit -m "chore: initial commit"
-git branch -M main
-git remote add origin https://github.com/vk57434/amrutam-frontend.git
-git push -u origin main
-```
-
----
-Generated README by assistant to help push the project to GitHub.
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Thank you for reviewing this project.
