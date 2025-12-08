@@ -109,7 +109,7 @@ Ensures readability and scalability for real-world growth.
 
 🚀 How to Run the Project Locally
 1️⃣ Clone the repository
-git clone https://github.com/your-username/amrutam-frontend.git
+git clone https://github.com/vk57434/amrutam-frontend.git
 cd amrutam-frontend
 
 2️⃣ Install dependencies
